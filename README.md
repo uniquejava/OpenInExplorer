@@ -1,6 +1,6 @@
 This tiny eclipse plug-in enables you to open windows explorer for any selected node from package explorer view.
 MyEclipse has this feature but Eclipse doesn't, so I wrote this one.
-You can open node java such as, package, file, referenced libraries, etc.
+You can open any node such as folder, file, JRE System Library, Referenced Libraries, etc.
 
 ![pic](http://static.oschina.net/uploads/space/2013/0831/194848_VEcq_113421.jpg)
 
@@ -12,7 +12,7 @@ Eclipse 3.6+ (CDT not supported)
 ```
 
 ##dependencies
-There are for dependencies for this plug in. You can find them in MANIFEST.MF file.
+There are 4 dependencies for this plug in. You can find them in MANIFEST.MF file.
 ```shell
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
