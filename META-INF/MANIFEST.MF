@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open In Explorer
+Bundle-SymbolicName: cyper.openinexplorer; singleton:=true
+Bundle-Version: 1.0.0.beta
+Bundle-Activator: cyper.openinexplorer.Activator
+Bundle-Vendor: Cyper
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.6.1",
+ org.eclipse.jdt.core;bundle-version="3.6.2"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

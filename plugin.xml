@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="My"
+            id="cyper.openinexplorer.commands.category">
+      </category>
+      <command
+            name="Open In Explorer"
+            categoryId="cyper.openinexplorer.commands.category"
+            id="cyper.openinexplorer.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="cyper.openinexplorer.commands.sampleCommand"
+            class="cyper.openinexplorer.handlers.OpenInExplorerHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="cyper.openinexplorer.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="cyper.openinexplorer.menus.sampleMenu"
+               label="My"
+               mnemonic="M">
+            <command
+                  commandId="cyper.openinexplorer.commands.sampleCommand"
+                  icon="icons/running.gif"
+                  id="cyper.openinexplorer.menus.sampleCommand"
+                  label="Open In Explorer"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="cyper.openinexplorer.toolbars.sampleToolbar">
+            <command
+                  commandId="cyper.openinexplorer.commands.sampleCommand"
+                  icon="icons/running.gif"
+                  id="cyper.openinexplorer.toolbars.sampleCommand"
+                  label="Open In Explorer"
+                  tooltip="Open In Explorer">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
