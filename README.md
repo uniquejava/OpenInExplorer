@@ -16,9 +16,9 @@ Eclipse 3.6+ (CDT not supported)
 
 ## dependencies
 All the dependencies can be found in MANIFEST.MF file.
-```
 
 ## how to use it
+
 1. Copy the output [cyper.openinexplorer_1.0.1.jar](target/cyper.openinexplorer_1.0.1.jar) to eclipse/dropins
 2. Restart eclipse, and you will see it on the tool bar as well as menu bar.
 
