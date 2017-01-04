@@ -172,7 +172,7 @@ public class WorkspaceUtil {
         Object obj = selection.getFirstElement();
 
         if (obj instanceof JarPackageFragmentRoot) {
-            System.out.println("JarPackageFragmentRoot");
+            Log.info("JarPackageFragmentRoot");
             JarPackageFragmentRoot ir = (JarPackageFragmentRoot) obj;
             File file = ir.getPath().toFile();
             String filePath = file.getAbsolutePath();
@@ -180,20 +180,20 @@ public class WorkspaceUtil {
         }
 
         if (obj instanceof IJavaElement) {
-            System.out.println("IJavaElement");
+        	Log.info("IJavaElement");
             IJavaElement ir = (IJavaElement) obj;
             obj = ir.getResource();
         }
 
         if (obj instanceof IResource) {
-            System.out.println("IResource");
+        	Log.info("IResource");
             IResource res = (IResource) obj;
-            IPath path = res.getFullPath();
+            IPath path = res.getLocation(); //res.getFullPath();
             String str = path.toOSString();
 
-            if (str.startsWith("\\")) {
-                str = getWorkspaceLocation().toOSString().concat(str);
-            }
+            //if (str.startsWith("\\")) {
+                //str = getWorkspaceLocation().toOSString().concat(str);
+            //}
 
             return str;
         }

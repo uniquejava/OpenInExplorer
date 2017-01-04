@@ -2,26 +2,27 @@ This tiny eclipse plug-in enables you to open windows explorer for any selected 
 MyEclipse has this feature but Eclipse doesn't, so I wrote this one.
 You can open any node such as folder, file, JRE System Library, Referenced Libraries, etc.
 
+**update in 2017** Add support for macOS.
+
 ![pic](http://static.oschina.net/uploads/space/2013/0831/194848_VEcq_113421.jpg)
 
-##prerequisites
-Eclipse3.6+ is required. I only tested in Eclipse Helios, Indigo, Kepler.
-```shell
+## prerequisites
+Eclipse3.6+ is required. I tested in Eclipse Helios, Indigo, Kepler, Neon.
+
+```sh
 JDK 1.5 +
 Eclipse 3.6+ (CDT not supported)
 ```
 
-##dependencies
-There are 4 dependencies for this plug in. You can find them in MANIFEST.MF file.
-```shell
-Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime,
- org.eclipse.core.resources;bundle-version="3.6.1",
- org.eclipse.jdt.core;bundle-version="3.6.2"
+## dependencies
+All the dependencies can be found in MANIFEST.MF file.
 ```
 
-##how to use it
-1. Copy the output "cyper.openinexplorer_1.0.0.beta.jar" to eclipse/dropins
+## how to use it
+1. Copy the output [cyper.openinexplorer_1.0.1.jar](target/cyper.openinexplorer_1.0.1.jar) to eclipse/dropins
 2. Restart eclipse, and you will see it on the tool bar as well as menu bar.
 
 Contact [me](http://my.oschina.net/uniquejava) if you need any help.
+
+## todo
+use cyper-utils as git submodules.
